@@ -1,0 +1,495 @@
+/* ===== CONTAINER GLOBAL ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* quando scrolla */
+.nav-scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* estrutura interna */
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* logo */
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* links */
+.nav-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #333;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #1A6BB5;
+}
+
+/* botão (se usar depois) */
+.nav-cta {
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* NAV TRANSPARENTE (hero) */
+.nav:not(.nav-scrolled) {
+  color: white;
+}
+
+.nav:not(.nav-scrolled) .nav-link {
+  color: white;
+}
+
+.nav:not(.nav-scrolled) .nav-logo {
+  color: white;
+}
+
+/* mobile */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(11, 37, 69, 0.7), rgba(11, 37, 69, 0.7)),
+    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 20px 0 30px;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== AREAS ===== */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  justify-content: center;
+  gap: 20px;
+}
+
+.area-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  max-width: 260px;
+}
+
+.area-card h3 {
+  font-size: 1rem;
+}
+
+.area-card p {
+  font-size: 0.85rem;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+  padding: 80px 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-content {
+  padding: 20px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0B2545, #1A6BB5);
+  text-align: center;
+  color: white;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #0B2545;
+  color: white;
+  padding: 60px 20px 20px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .areas-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== NOSSO IMPACTO NA COMUNIDADE ===== */
+.impact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center;
+  gap: 20px;
+}
+
+.impact-card {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.impact-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.areas {
+  padding: 100px 20px;
+  background-color: #FDF5E6; /* Amarelo Baunilha */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container de animação */
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+  position: relative;
+  z-index: 2; /* Garante que o texto fique acima das manchas */
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* IMAGEM */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border: 1.5px solid #fff;
+}
+
+/* TEXTO */
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-tag {
+  display: inline-block;
+  color: #FFB7CE; /* Rosa Chiclete */
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* detalhe embaixo (linha estilizada) */
+.about-tag::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 6px;
+  background: #A1C6EA; /* Linha Azul Bebê */
+  margin-top: 6px;
+  border-radius: 10px;
+}
+
+/* TÍTULO */
+.about-content h2 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #5D4037; /* Marrom Chocolate para contraste suave */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #705D56; /* Cinza amarronzado para leitura confortável */
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 280px;
+  }
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+  opacity: 0.1;
+}
+
+/* manchas de cor */
+.areas::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #ff4fa3;
+  top: -150px;
+  left: -120px;
+  opacity: 0.5;
+  clip-path: polygon(
+    50% 0%, 70% 10%, 90% 30%, 80% 60%, 60% 90%, 
+    30% 80%, 10% 60%, 0% 30%, 20% 10%
+  );
+}
+
+/* MANCHA AZUL */
+.areas::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #7ecbff;
+  bottom: -150px;
+  right: -100px;
+  opacity: 0.5;
+  clip-path: polygon(
+    40% 0%, 80% 20%, 100% 50%, 80% 80%, 
+    50% 100%, 20% 80%, 0% 50%, 20% 20%
+  );
+}
+
+/* ===== MANCHAS ESTILO GOTAS DE TINTA ===== */
+.blob {
+  position: absolute;
+  opacity: 0.7; /* Mais sólidas para parecer tinta */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Gota Rosa Chiclete (Canto Superior) */
+.blob-1 {
+  width: 350px;
+  height: 350px;
+  background: #FFB7CE;
+  top: -80px;
+  left: -80px;
+  /* Formato irregular de mancha de tinta */
+  clip-path: polygon(
+    30% 0%, 70% 0%, 100% 30%, 80% 90%, 
+    50% 100%, 20% 90%, 0% 50%, 10% 20%
+  );
+  transform: rotate(-10deg);
+}
+
+/* Gota Azul Bebê (Canto Inferior) */
+.blob-2 {
+  width: 450px;
+  height: 400px;
+  background: #A1C6EA;
+  bottom: -120px;
+  right: -50px;
+  /* Formato de 'poça' de tinta */
+  clip-path: polygon(
+    50% 0%, 80% 10%, 100% 35%, 100% 70%, 
+    80% 90%, 50% 100%, 20% 90%, 0% 70%, 
+    0% 35%, 20% 10%
+  );
+  transform: rotate(15deg);
+}
+
+/* Gota Amarelo Sol (Perto da Foto) */
+.blob-3 {
+  width: 200px;
+  height: 200px;
+  background: #FFF4A3;
+  top: 15%;
+  right: 15%;
+  /* Formato de pingo de tinta */
+  clip-path: polygon(40% 0%, 100% 20%, 80% 80%, 20% 100%, 0% 20%);
+  transform: rotate(-5deg);
+}
+
+/* RESPONSIVO FINAL */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-tag::after {
+    margin: 6px auto 0;
+  }
+
+  /* MOLDURA DA FOTO ESTILO PINTURA */
+  .about-image img {
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Borda branca mais grossa para destacar da tinta */
+    border: 15px solid #ffffff;
+    box-shadow: 10px 10px 0px rgba(161, 198, 234, 0.5); /* Sombra "durinha" lateral, estilo cartoon */
+  }
+}
