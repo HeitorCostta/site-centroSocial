@@ -4,7 +4,6 @@ import Areas from "./components/Areas/Areas";
 import Projects from "./components/Projects/Projects";
 import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
-import Impact from "./components/Impact/Impact";
 import "./styles/global.css";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
       <Navbar />
       <Hero />
       <Areas />
-      <Impact />
       <Projects />
       <CTA />
       <Footer />

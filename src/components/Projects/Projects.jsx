@@ -7,23 +7,29 @@ export default function Projects() {
   return (
     <section className="projects" id="projects" ref={ref}>
       
+      {/* HEADER */}
       <div className={`section-header ${visible ? "visible" : ""}`}>
-        <span className="section-tag">Projetos</span>
-        <h2>Nossas Iniciativas</h2>
+        <div className="section-divider"></div>
+
+        <h2>Nossas Atividades</h2>
+
         <p>
-          Descubra alguns dos projetos que estão transformando comunidades e criando oportunidades reais.
+          Conheça algumas das atividades que ajudam no desenvolvimento das crianças
+          e fortalecem a comunidade.
         </p>
       </div>
 
+      {/* GRID */}
       <div className="projects-grid">
         {PROJECTS.map((project, index) => (
           <div key={index} className="project-card">
-            
-            <div
-              className="project-image"
-              style={{ background: project.bg }}
-            >
-              {project.emoji}
+
+            <div className="project-image">
+              <img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+              />
             </div>
 
             <div className="project-content">
@@ -32,15 +38,12 @@ export default function Projects() {
               <h3>{project.title}</h3>
 
               <p>{project.desc}</p>
-
-              <button className="btn-sm">
-                Saiba Mais →
-              </button>
             </div>
 
           </div>
         ))}
       </div>
+
     </section>
   );
 }

@@ -1,21 +1,20 @@
+import foto from "../../../public/images/fundo-cta.jpg"
 export default function CTA() {
   return (
-    <section className="cta" id="cta">
-      
-      <div className="cta-content">
-        <h2>Sua Ajuda Pode Mudar Vidas Hoje</h2>
+<section className="cta" id="cta">
 
-        <p>
-          Toda contribuição importa. Seja doando, sendo voluntário ou compartilhando nossa missão,
-          você está ajudando a construir um futuro melhor para milhares de pessoas.
-        </p>
+  <img src = {foto} alt="" className="cta-bg" />
 
-        <div className="cta-buttons">
-          <button className="btn-primary">❤️ Doar Agora</button>
-          <button className="btn-secondary">🙌 Tornar-se Voluntário</button>
-        </div>
-      </div>
+  <div className="cta-content">
+    <h2>Ajude ao Projetos</h2>
 
-    </section>
+    <p>
+      Toda contribuição importa.
+    </p>
+
+    <button className="btn-primary">❤️ Doar Agora</button>
+  </div>
+
+</section>
   );
 }

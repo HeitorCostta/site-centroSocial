@@ -1,4 +1,11 @@
-
+import Esporte from "../../public/images/Ariel.jpeg"
+import Danca from "../../public/images/Danca.jpeg"
+import Canto from "../../public/images/Camile.jpeg"
+import Culinaria from "../../public/images/Culinaria.jpeg"
+import Informatica from "../../public/images/Heitor.jpg"
+import KungFu from "../../public/images/Carlos.jpeg"
+import Historia from "../../public/images/Aline.jpeg"
+import Artesanato from "../../public/images/Paula.jpeg"
 // ===== AREAS =====
 export const AREAS = [
   {
@@ -30,25 +37,52 @@ export const AREAS = [
 // ===== PROJECTS =====
 export const PROJECTS = [
   {
-    emoji: "🌱",
-    bg: "linear-gradient(135deg, #27AE74, #4DA8DA)",
-    tag: "Educação",
-    title: "Sementes do Conhecimento",
-    desc: "Ajudando crianças a terem acesso à educação.",
+    tag: "Esporte",
+    title: "Esporte e Disciplina",
+    desc: "Atividades esportivas que promovem saúde, trabalho em equipe e disciplina para as crianças.",
+    image: Esporte,
   },
   {
-    emoji: "💧",
-    bg: "linear-gradient(135deg, #1A6BB5, #4DA8DA)",
-    tag: "Infraestrutura",
-    title: "Água Limpa",
-    desc: "Fornecendo soluções de acesso à água potável.",
+    tag: "Dança",
+    title: "Expressão Corporal",
+    desc: "Aulas de dança que desenvolvem coordenação, autoestima e expressão artística.",
+    image: Danca,
   },
   {
-    emoji: "🤝",
-    bg: "linear-gradient(135deg, #F4A440, #E05555)",
-    tag: "Trabalho",
-    title: "Habilidades Digitais",
-    desc: "Capacitando pessoas para trabalhos remotos.",
+    tag: "Informática",
+    title: "Inclusão Digital",
+    desc: "Ensino de informática básica preparando jovens para o futuro digital.",
+    image: Informatica,
+  },
+  {
+    tag: "Canto",
+    title: "Música e Voz",
+    desc: "Aulas de canto que incentivam talento, confiança e expressão musical.",
+    image: Canto,
+  },
+  {
+    tag: "Culinária",
+    title: "Oficina de Culinária",
+    desc: "Ensino de receitas e práticas culinárias incentivando autonomia e criatividade.",
+    image: Culinaria,
+  },
+  {
+    tag: "Histórias",
+    title: "Contação de Histórias",
+    desc: "Momentos de leitura e imaginação que estimulam o aprendizado e a criatividade.",
+    image: Historia,
+  },
+  {
+    tag: "Artesanato",
+    title: "Criatividade Manual",
+    desc: "Atividades de artesanato que desenvolvem habilidades motoras e criatividade.",
+    image: Artesanato,
+  },
+  {
+    tag: "Kung Fu",
+    title: "Disciplina e Respeito",
+    desc: "Aulas de artes marciais que fortalecem corpo, mente e valores.",
+    image: KungFu,
   },
 ];
 
