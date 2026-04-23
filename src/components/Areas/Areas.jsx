@@ -33,7 +33,7 @@ export default function Areas() {
           </p>
 
           <p>
-            Com projetos voltados para crianças, jovens e adultos, buscamos não
+            Com projetos voltados para crianças, buscamos não
             apenas atender necessidades imediatas, mas também criar caminhos para o
             crescimento pessoal e social.
           </p>
