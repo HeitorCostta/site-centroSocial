@@ -9,10 +9,6 @@ export default function Hero() {
 
       <div className="container hero-content">
         
-        <h1 className="hero-title">
-          Transformando Vidas por Meio de Oportunidades
-        </h1>
-
         <p className="hero-subtitle">
           Capacitando comunidades por meio da educação, emprego, saúde e infraestrutura — gerando mudanças reais e duradouras.
         </p>
