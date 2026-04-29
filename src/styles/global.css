@@ -114,26 +114,26 @@
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  min-height: 100vh; /* Ocupa a tela toda */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Substitua pelo nome correto da sua imagem na pasta public */
-  background: url('../../public/images/logo.jpg') no-repeat center center/cover; 
+
+  /* FOTO DE FUNDO SEM LOGO */
+  background: url('../../public/images/fundo-cta.jpeg') no-repeat center center/cover;
+
   color: #ffffff;
   padding: 80px 20px;
-  min-height: 100vh;
+  overflow: hidden;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* Um degradê preto bem suave que escurece só um pouco o fundo */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.1) 0%, 
-    rgba(0, 0, 0, 0.1) 50%, 
-    
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.55)
   );
   z-index: 1;
 }
@@ -163,6 +163,47 @@
   color: #ff69b4; /* O mesmo Rosa do coração do seu logo! */
 }
 
+.hero-logo {
+  width: clamp(280px, 50vw, 700px);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+
+  animation: heroLogoEntrance 1.5s ease,
+  floating 4s ease-in-out infinite 1.5s;
+
+    filter:
+    drop-shadow(0 0 15px rgb(255, 255, 255))
+    drop-shadow(0 0 40px rgb(255, 255, 255))
+    drop-shadow(0 0 80px rgba(255, 255, 255, 0.938));
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* animação entrada */
+@keyframes heroLogoEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 /* Animação para o logo não aparecer de uma vez */
 @keyframes fadeInDown {
   from {
