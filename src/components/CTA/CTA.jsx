@@ -1,4 +1,4 @@
-import foto from "../../../public/images/SaoMateus.png";
+import foto from "../../../public/images/fotoFooter.png";
 
 export default function CTA() {
   return (
@@ -11,7 +11,6 @@ export default function CTA() {
 
       {/* 3. O Texto e Botão */}
       <div className="cta-content">
-        <h2>Ajude o Projeto</h2>
         <p>Sua contribuição transforma vidas. Faça parte dessa história.</p>
         <button className="btn-donate"> Doar Agora</button>
       </div>
