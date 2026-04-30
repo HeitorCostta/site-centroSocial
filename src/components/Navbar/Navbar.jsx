@@ -11,13 +11,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
+   <header className="nav">
       <div className="nav-inner">
-
-        {/* Logo */}
-        <div className="nav-logo">
-          Centro Social São Mateus
-        </div>
 
         {/* Links Desktop */}
         <nav className="nav-links">

@@ -8,7 +8,7 @@ export default function Hero() {
       {/* overlay */}
       <div className="hero-overlay" />
 
-      <div className="container hero-content">
+      <div className="hero-content">
 
         {/* LOGO SEPARADO */}
         <img
@@ -16,10 +16,6 @@ export default function Hero() {
           alt="Centro Social São Mateus"
           className="hero-logo"
         />
-
-        <p className="hero-subtitle">
-          Capacitando comunidades por meio da educação, emprego, saúde e infraestrutura — gerando mudanças reais e duradouras.
-        </p>
 
         <div className="hero-actions">
           <button
