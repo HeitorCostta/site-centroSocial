@@ -11,7 +11,7 @@ export default function Areas() {
   const [ref, visible] = useReveal();
 
   return (
-    <section className="areas" id="areas" ref={ref}>
+    <section className="areas" id="about" ref={ref}>
 
       {/* ELEMENTOS DECORATIVOS */}
       <img src={planet1} alt="" className="decor decor-planet-1" />

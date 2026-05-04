@@ -19,8 +19,8 @@ export default function Navbar() {
           <button onClick={() => scrollTo("about")} className="nav-link">
             Sobre
           </button>
-          <button onClick={() => scrollTo("areas")} className="nav-link">
-            Atividades
+          <button onClick={() => scrollTo("conheca")} className="nav-link">
+            Conheça-nos
           </button>
           <button onClick={() => scrollTo("projects")} className="nav-link">
             Projetos
