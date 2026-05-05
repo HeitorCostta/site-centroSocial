@@ -1,57 +1,107 @@
 import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useNavScroll } from "../../hooks/useNavScroll";
 
 export default function Navbar() {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
   const scrolled = useNavScroll(60);
   const [open, setOpen] = useState(false);
 
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setOpen(false);
+  // Função inteligente que decide se faz scroll ou se muda de página primeiro
+  const handleNavClick = (id) => {
+    if (pathname !== "/") {
+      // Se não estiver na Home, navega para a Home primeiro
+      navigate("/");
+      
+      // Aguarda um pequeno instante para a página carregar e faz o scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // Se já estiver na Home, apenas faz o scroll suave
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setOpen(false); // Fecha o menu mobile se estiver aberto
   };
 
   return (
-   <header className="nav">
+    <header className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
       <div className="nav-inner">
+        
+        <div className="nav-logo">
+          <Link
+            to="/"
+            className="nav-logo-link"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Centro Social São Mateus
+          </Link>
+        </div>
 
         {/* Links Desktop */}
         <nav className="nav-links">
-          <button onClick={() => scrollTo("about")} className="nav-link">
+          <button onClick={() => handleNavClick("about")} className="nav-link">
             Sobre
           </button>
-          <button onClick={() => scrollTo("conheca")} className="nav-link">
+          <button onClick={() => handleNavClick("conheca")} className="nav-link">
             Conheça-nos
           </button>
-          <button onClick={() => scrollTo("projects")} className="nav-link">
+          <button onClick={() => handleNavClick("projects")} className="nav-link">
             Projetos
           </button>
-          <button onClick={() => scrollTo("cta")} className="nav-link">
+          
+          {/* Link para a página de Transparência */}
+              <Link 
+                to="/transparency" 
+                className="nav-link"
+              >
+                Transparência
+              </Link>
+
+          <button onClick={() => handleNavClick("cta")} className="nav-link nav-btn-doar">
             Doar
           </button>
         </nav>
 
-        {/* Botão Mobile */}
+        {/* Botão de Menu Mobile */}
         <button
           className="nav-toggle"
           onClick={() => setOpen(!open)}
+          aria-label="Menu"
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
       </div>
 
       {/* Menu Mobile */}
       {open && (
         <div className="nav-mobile">
-          <button onClick={() => scrollTo("about")} className="nav-mobile-link">
+          <button onClick={() => handleNavClick("about")} className="nav-mobile-link">
             Sobre
           </button>
-          <button onClick={() => scrollTo("areas")} className="nav-mobile-link">
-            Atividades
+          <button onClick={() => handleNavClick("conheca")} className="nav-mobile-link">
+            Conheça-nos
           </button>
-          <button onClick={() => scrollTo("projects")} className="nav-mobile-link">
+          <button onClick={() => handleNavClick("projects")} className="nav-mobile-link">
             Projetos
           </button>
-          <button onClick={() => scrollTo("cta")} className="nav-mobile-link">
+          
+          <Link 
+            to="/transparency" 
+            className="nav-mobile-link" 
+            onClick={() => setOpen(false)}
+          >
+            Transparência
+          </Link>
+
+          <button onClick={() => handleNavClick("cta")} className="nav-mobile-link">
             Doar
           </button>
         </div>

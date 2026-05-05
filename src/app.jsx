@@ -1,26 +1,25 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Areas from "./components/Areas/Areas";
-import Projects from "./components/Projects/Projects";
-import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
-import InstitutionalVideo from "./components/InstitutionalVideo";
-import Transparency from "./components/Transparency";
+
+import Home from "./pages/Home.jsx";
+import Transparency from "./pages/Transparency.jsx";
 
 import "./styles/global.css";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Areas />
-      <InstitutionalVideo />
-      <Projects />
-      <Transparency />
-      <CTA />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/transparency" element={<Transparency />} />
+      </Routes>
+
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
