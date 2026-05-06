@@ -168,10 +168,19 @@ body {
   font-weight: 600;
 
   color: #444;
+  text-decoration: none;
 
   cursor: pointer;
 
   transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mobile-link:hover {
+  color: #ff4da6;
 }
 
 
@@ -340,6 +349,8 @@ body {
   font-weight: bold;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
+  text-decoration: none;
+  width: fit-content;
 }
 
 .btn-primary:hover {
@@ -584,6 +595,8 @@ body {
   align-items: center;
   gap: 10px;
   margin: 0 auto;
+  text-decoration: none;
+  width: fit-content;
 }
 
 .btn-donate:hover {
@@ -689,6 +702,8 @@ body {
 /* Ícones das Redes Sociais */
 .socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   margin-top: 15px;
 }
@@ -705,7 +720,6 @@ body {
   transform: scale(1.1);
 }
 
-/* ===== BOTÃO FLUTUANTE WHATSAPP (ATUALIZADO) ===== */
 /* ===== BOTÃO FLUTUANTE WHATSAPP (ATUALIZADO) ===== */
 .whatsapp-float {
   position: fixed;
@@ -777,6 +791,7 @@ body {
   margin: 2px 0;
   opacity: 0.8;
 }
+
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 900px) {
@@ -866,7 +881,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
 
-  border: 12px solid #fff;
+  border: 5px solid #e0e0e0;
 
   box-shadow:
     0 20px 60px rgba(0,0,0,0.12),
@@ -1008,6 +1023,35 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .decor-planet-1 {
+    width: 90px;
+    opacity: 0.3;
+    top: 30px;
+    left: -20px;
+  }
+
+  .decor-planet-2 {
+    width: 140px;
+    opacity: 0.3;
+    bottom: -20px;
+    right: -30px;
+  }
+
+  .decor-star {
+    width: 40px;
+    opacity: 0.5;
+  }
+
+  .decor-scribble {
+    width: 120px;
+    opacity: 0.5;
+    bottom: -30px;
+  }
+
+}
+
 /* RESPONSIVO FINAL */
 @media (max-width: 900px) {
   .about-container {
@@ -1020,17 +1064,7 @@ body {
     margin: 6px auto 0;
   }
 
-  /* MOLDURA DA FOTO ESTILO PINTURA */
-  .about-image img {
-    width: 100%;
-    max-width: 380px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* Borda branca mais grossa para destacar da tinta */
-    border: 15px solid #ffffff;
-    box-shadow: 10px 10px 0px rgba(161, 198, 234, 0.5); /* Sombra "durinha" lateral, estilo cartoon */
-  }
+
 }
 
 /* ===== INSTITUTIONAL VIDEO ===== */
@@ -1499,4 +1533,142 @@ body {
   .transparency-card {
     padding: 28px 24px;
   }
+}
+
+/* ===== DONATION PAGE ===== */
+
+.donation-page {
+  min-height: 100vh;
+
+  padding: 140px 20px 100px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #f8fbff 0%,
+      #ffffff 100%
+    );
+
+  text-align: center;
+}
+
+.donation-tag {
+  display: inline-block;
+
+  background: rgba(255, 105, 180, 0.12);
+
+  color: #ff4da6;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+}
+
+.donation-page h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  line-height: 1.1;
+
+  color: #1f2937;
+
+  margin-bottom: 24px;
+
+  font-weight: 800;
+}
+
+.donation-page p {
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+
+  line-height: 1.8;
+
+  color: #667085;
+
+  font-size: 1.05rem;
+}
+
+.donation-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.pix-qrcode {
+  width: 260px;
+
+  border-radius: 24px;
+
+  margin-bottom: 35px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.08);
+}
+
+.pix-box {
+  background: #ffffff;
+
+  max-width: 450px;
+  width: 100%;
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.05);
+}
+
+.pix-box strong {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #444;
+
+  font-size: 1rem;
+}
+
+.pix-box span {
+  display: block;
+
+  color: #ff4da6;
+
+  font-size: 1.1rem;
+
+  font-weight: 700;
+
+  margin-bottom: 16px;
+}
+
+.pix-box small {
+  color: #667085;
+
+  line-height: 1.6;
+
+  font-size: 0.92rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+  .donation-page {
+    padding: 120px 20px 80px;
+  }
+
+  .pix-qrcode {
+    width: 220px;
+  }
+
+  .pix-box {
+    padding: 22px;
+  }
+
 }

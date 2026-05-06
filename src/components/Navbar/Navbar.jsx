@@ -71,11 +71,11 @@ export default function Navbar() {
         </nav>
 
         {/* Botão de Menu Mobile */}
-        <button
-          className="nav-toggle"
-          onClick={() => setOpen(!open)}
-          aria-label="Menu"
-        >
+      <button
+        className="nav-toggle"
+        onClick={() => setOpen(!open)}
+        aria-label={open ? "Fechar menu" : "Abrir menu"}
+      >
           {open ? "✕" : "☰"}
         </button>
       </div>

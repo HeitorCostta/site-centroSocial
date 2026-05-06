@@ -1,5 +1,6 @@
 import { scrollToId } from "../../utils/scroll";
 import logo from "../../../public/images/logo.png"
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -17,14 +18,13 @@ export default function Hero() {
           className="hero-logo"
         />
 
-        <div className="hero-actions">
-          <button
-            className="btn-primary"
-            onClick={() => scrollToId("doacao")}
-          >
-            ❤️ Doar Agora
-          </button>
-        </div>
+      <div className="hero-actions">
+
+        <Link to="/doacao" className="btn-primary">
+          ❤️ Doar Agora
+        </Link>
+
+      </div>
 
       </div>
     </section>
