@@ -35,16 +35,32 @@ export default function Navbar() {
     <header className={`nav ${scrolled ? "nav-scrolled" : ""}`}>
       <div className="nav-inner">
         
-        <div className="nav-logo">
-          <Link
-            to="/"
-            className="nav-logo-link"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            Centro Social São Mateus
-          </Link>
-        </div>
+<div className="nav-logo">
 
+  <Link
+    to="/"
+    className="nav-logo-link"
+    onClick={() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+  >
+    <span className="logo-main">
+      Centro Social
+    </span>
+
+    <span className="logo-dot">
+      
+    </span>
+
+    <span className="logo-accent">
+      São Mateus
+    </span>
+  </Link>
+
+</div>
         {/* Links Desktop */}
         <nav className="nav-links">
           <button onClick={() => handleNavClick("about")} className="nav-link">

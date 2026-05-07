@@ -24,10 +24,9 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 18px 0;
+  padding: 8px 0;
   z-index: 1000;
 
-  /* AGORA FIXO BRANCO */
   background: rgba(255, 255, 255, 0.96);
 
   backdrop-filter: blur(10px);
@@ -42,7 +41,7 @@ body {
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* centraliza os links */
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -52,12 +51,38 @@ body {
 
 /* links */
 
+
+.logo-main {
+  color: #a1a1a1;
+}
+
+.logo-dot {
+  color: #ff4da6;
+  font-size: 0.75rem;
+}
+
+.logo-accent {
+  color: #ff4da6;
+}
+
+.nav-logo-link:hover {
+  transform: scale(1.03);
+}
+
 .nav-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
   text-decoration: none;
+
   color: #333;
-  font-size: 1.2rem;
-  font-weight: 800;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+
   letter-spacing: 0.3px;
+
   transition: 0.3s ease;
 }
 
@@ -113,7 +138,7 @@ body {
 }
 
 
-/* efeito hover bonito */
+/* efeito hover */
 .nav-link:hover,
 .nav-link:hover:visited {
   color: #ff4da6;
@@ -127,7 +152,7 @@ body {
   text-decoration: none;
 }
 
-/* botão (se usar depois) */
+/* botão*/
 .nav-cta {
   padding: 10px 20px;
   border-radius: 999px;
@@ -207,7 +232,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  /* FOTO DE FUNDO SEM LOGO */
+  /* FOTO DE FUNDO*/
   background: url('../../public/images/fundo-cta.jpeg') no-repeat center center/cover;
 
   color: #ffffff;
@@ -246,13 +271,13 @@ body {
 
 .hero-title {
   color: #ffffff;
-  /* Sombra estratégica para leitura em cima de cores claras */
+
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
 }
 
 
 .hero-title span {
-  color: #ff69b4; /* O mesmo Rosa do coração do seu logo! */
+  color: #ff69b4; 
 }
 
 .hero-logo {
@@ -299,7 +324,7 @@ body {
     transform: translateY(0) scale(1);
   }
 }
-/* Animação para o logo não aparecer de uma vez */
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -322,9 +347,9 @@ body {
 }
 
 .hero-actions .btn-primary {
-  background: #969397; /* O rosa padrão que definimos */
+  background: #f163bb;
   color: #fff;
-  padding: 18px 45px;
+  padding: 18px 25px;
   border-radius: 50px;
   border: none;
   font-size: 1.2rem;
@@ -370,15 +395,15 @@ body {
   }
 }
 
-/* Ajuste para celular */
+
 @media (max-width: 768px) {
   .hero {
-    min-height: 80vh; /* Um pouco menor no celular para não rolar tanto */
+    min-height: 80vh; 
     padding-top: 100px;
   }
   
   .hero-actions .btn-primary {
-    width: 100%; /* Botão largo no celular para facilitar o clique */
+    width: 100%; 
     justify-content: center;
   }
 }
@@ -470,9 +495,7 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
-.project-content {
-  padding: 20px;
-}
+
 
 .project-image {
   height: 180px;
@@ -497,15 +520,15 @@ body {
 
 .project-tag {
   display: inline-block;
-  background: #1c550d; /* O rosa do seu botão principal */
-  color: #ffffff;      /* Branco puro para melhor contraste */
-  padding: 6px 14px;   /* Ajuste leve para dar mais respiro */
-  border-radius: 50px; /* Valor alto garante que fique totalmente arredondado */
+  background: #1c550d;
+  color: #ffffff;
+  padding: 6px 14px; 
+  border-radius: 50px;
   font-size: 0.75rem;
-  font-weight: 700;    /* Um pouco mais grossa para destacar bem */
-  margin-bottom: 12px; /* Mais espaço em relação ao título abaixo */
-  text-transform: uppercase; /* Opcional: deixa em caixa alta, combina com esse estilo */
-  letter-spacing: 0.5px;     /* Melhora a leitura se usar caixa alta */
+  font-weight: 700;   
+  margin-bottom: 12px; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5px;     
 }
 .project-content p {
   font-size: 0.9rem;
@@ -522,7 +545,6 @@ body {
 
 /* ===== CTA ===== */
 
-/* ===== SEÇÃO CTA - DESIGN PROFISSIONAL ===== */
 .cta {
   position: relative;
   width: 100%;
@@ -531,7 +553,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #000; /* Fundo de segurança */
+  background-color: #000;
 }
 
 .cta-bg {
@@ -541,7 +563,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 73% ;
+  object-position: center 60% ;
   z-index: 1;
   transition: transform 0.5s ease;
 }
@@ -549,7 +571,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Camada que garante que o texto apareça sobre o gramado claro */
 .cta-overlay {
   position: absolute;
   inset: 0;
@@ -580,7 +601,6 @@ body {
   text-shadow: 2px 2px 10px rgba(0,0,0,0.5)
 }
 
-/* Botão Estilo Pílula */
 .btn-donate {
   background: #ff69b4;
   color: white;
@@ -606,7 +626,6 @@ body {
 }
 
 
-/* Ajuste para Celular */
 @media (max-width: 768px) {
   .cta { height: 420px; }
   .cta-content h2 { font-size: 2.2rem; }
@@ -626,7 +645,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr 1.5fr 1.2fr; /* Três colunas para o mapa caber ao lado */
+  grid-template-columns: 1.2fr 1.5fr 1.2fr;
   gap: 40px;
   padding-bottom: 40px;
 }
@@ -648,7 +667,7 @@ body {
 }
 
 .footer-col h4 {
-  color: #ff69b4; /* Rosa da sua identidade */
+  color: #ff69b4; 
   margin-bottom: 20px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -677,8 +696,8 @@ body {
 .footer-map {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o título e o mapa */
-  text-align: center;  /* Centraliza o texto do endereço */
+  align-items: center;
+  text-align: center;  
 }
 
 .map-canvas {
@@ -699,6 +718,16 @@ body {
   text-align: center;
 }
 
+.footer-logo {
+  width: 180px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,0.15));
+}
+
 /* Ícones das Redes Sociais */
 .socials {
   display: flex;
@@ -716,11 +745,11 @@ body {
 }
 
 .social-icon:hover svg {
-  stroke: #ff69b4; /* Muda a cor da linha no hover */
+  stroke: #ff69b4;
   transform: scale(1.1);
 }
 
-/* ===== BOTÃO FLUTUANTE WHATSAPP (ATUALIZADO) ===== */
+/* ===== BOTÃO FLUTUANTE WHATSAPP  ===== */
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -729,7 +758,7 @@ body {
   right: 30px;
   background-color: #25d366;
   color: #FFF;
-  border-radius: 50%; /* Mantém o botão perfeitamente circular */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -739,7 +768,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Garante que o ícone SVG dentro do botão fique branco e no tamanho certo */
+
 .whatsapp-float svg {
   fill: #FFF;
   width: 32px;
@@ -753,7 +782,6 @@ body {
   box-shadow: 2px 6px 15px rgba(0,0,0,0.4);
 }
 
-/* Ajuste para dispositivos móveis (telas menores) */
 @media (max-width: 768px) {
   .whatsapp-float {
     width: 50px;
@@ -768,7 +796,6 @@ body {
   }
 }
 
-/* Responsivo para Celular */
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -793,7 +820,6 @@ body {
 }
 
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 900px) {
   .areas-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -812,7 +838,7 @@ body {
     grid-template-columns: 1fr;
   }}
 
-/* ===== NOSSO IMPACTO NA COMUNIDADE ===== */
+
 .impact {
   padding: 80px 20px;
   text-align: center;
@@ -841,12 +867,12 @@ body {
 
 .areas {
   padding: 100px 20px;
-  background-color: #FDF5E6; /* Amarelo Baunilha */
+  background-color: #FDF5E6;
   position: relative;
   overflow: hidden;
 }
 
-/* Container de animação */
+
 .about-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -857,7 +883,7 @@ body {
   transform: translateY(40px);
   transition: all 0.8s ease;
   position: relative;
-  z-index: 2; /* Garante que o texto fique acima das manchas */
+  z-index: 2; 
 }
 
 .about-container.visible {
@@ -903,13 +929,12 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* detalhe embaixo (linha estilizada) */
 .about-tag::after {
   content: "";
   display: block;
   width: 60px;
   height: 6px;
-  background: #A1C6EA; /* Linha Azul Bebê */
+  background: #A1C6EA; 
   margin-top: 6px;
   border-radius: 10px;
 }
@@ -919,28 +944,17 @@ body {
   font-size: 38px;
   font-weight: 800;
   line-height: 1.2;
-  color: #5D4037; /* Marrom Chocolate para contraste suave */
+  color: #5D4037;
   margin-bottom: 20px;
 }
 
 .about-content p {
   font-size: 16px;
   line-height: 1.8;
-  color: #705D56; /* Cinza amarronzado para leitura confortável */
+  color: #705D56; 
   margin-bottom: 15px;
 }
 
-/* RESPONSIVO */
-@media (max-width: 900px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image img {
-    max-width: 280px;
-  }
-}
 
 .about-image::before {
   content: "";
@@ -1008,7 +1022,6 @@ body {
   transform: rotate(-12deg);
 }
 
-/* animação suave */
 @keyframes floatPlanet {
   0% {
     transform: translateY(0px);
@@ -1064,7 +1077,9 @@ body {
     margin: 6px auto 0;
   }
 
-
+    .about-image img {
+    max-width: 280px;
+  }
 }
 
 /* ===== INSTITUTIONAL VIDEO ===== */
@@ -1336,7 +1351,6 @@ body {
   }
 }
 
-/* ===== TRANSPARÊNCIA ===== */
 
  /* ===== TRANSPARÊNCIA ===== */
 

@@ -1,6 +1,6 @@
 import { useReveal } from "../../hooks/useReveal";
 
-import aboutFoto from "../../../public/images/aboutFoto.jpg";
+import aboutFoto from "../../../public/images/aboutFoto.jpeg";
 
 import planet1 from "../../../public/images/planets.png";
 import planet2 from "../../../public/images/planets2.png";
@@ -37,17 +37,17 @@ export default function Areas() {
           </h2>
 
           <p>
-            O Centro Social atua diretamente na comunidade, promovendo inclusão,
-            educação e apoio às famílias em situação de vulnerabilidade.
-            Nosso trabalho é voltado para gerar oportunidades reais,
-            fortalecendo vínculos e construindo um futuro mais justo
-            e sustentável para todos.
+            O Centro Social São Mateus atua em Guariba promovendo acolhimento,
+            inclusão social e desenvolvimento humano para crianças e famílias em
+            situação de vulnerabilidade. Nosso compromisso é criar oportunidades reais
+            por meio da educação, do cuidado e do fortalecimento dos vínculos comunitários.
           </p>
 
           <p>
-            Com projetos voltados para crianças, buscamos não apenas atender
-            necessidades imediatas, mas também criar caminhos para o crescimento
-            pessoal e social.
+            Mais do que atender necessidades imediatas, buscamos construir caminhos
+            para um futuro mais digno, oferecendo apoio, aprendizado e esperança para cada criança atendida.
+            Cada projeto desenvolvido pelo Centro Social São Mateus tem como propósito transformar vidas e contribuir
+            para uma comunidade mais justa, humana e solidária.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import foto from "../../../public/images/fotoFooter.png";
+import foto from "../../../public/images/fotoFooter.jpeg";
 
 export default function CTA() {
   return (
@@ -24,7 +24,7 @@ export default function CTA() {
         </p>
 
         <Link to="/doacao" className="btn-donate">
-          Doar Agora
+          Apoie esta Causa
         </Link>
 
       </div>

@@ -7,68 +7,71 @@ export default function Footer() {
 
         <div className="footer-container">
 
-          {/* ===== MARCA ===== */}
-          <div className="footer-brand">
+{/* ===== MARCA ===== */}
+<div className="footer-brand">
 
-            <h3>
-              Centro Social São Mateus
-            </h3>
+  {/* LOGO */}
+  <img
+    src="/images/logo.png"
+    alt="Logo do Centro Social São Mateus"
+    className="footer-logo"
+  />
 
-            <p>
-              Transformando realidades através da solidariedade.
-              Sua participação é o que nos move.
-            </p>
+  <p>
+    Transformando realidades através da solidariedade.
+    Sua participação é o que nos move.
+  </p>
 
-            {/* ===== REDES ===== */}
-            <div className="socials">
+  {/* ===== REDES ===== */}
+  <div className="socials">
 
-              {/* Instagram */}
-              <a
-                href="https://www.instagram.com/centrosaomateusoficial?igsh=Nzhib2R5bGc0dzJy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon"
-                aria-label="Instagram do Centro Social São Mateus"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/centrosaomateusoficial?igsh=Nzhib2R5bGc0dzJy"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      aria-label="Instagram do Centro Social São Mateus"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
 
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
 
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </a>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
 
-              {/* Facebook */}
-              <a
-                href="https://www.facebook.com/share/1CgnHm1CbN/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-icon"
-                aria-label="Facebook do Centro Social São Mateus"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-              </a>
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/share/1CgnHm1CbN/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-icon"
+      aria-label="Facebook do Centro Social São Mateus"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    </a>
 
-            </div>
+  </div>
 
-          </div>
+</div>
 
           {/* ===== AÇÕES ===== */}
           <div className="footer-actions">
@@ -169,7 +172,7 @@ export default function Footer() {
 
           <p>
             © 2026 Centro Social São Mateus.
-            Criado por <b>Heitor Costa</b>.
+            Desenvolvido por <b>Heitor Costa</b>.
           </p>
 
         </div>
