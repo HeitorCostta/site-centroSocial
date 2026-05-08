@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="hero-actions">
 
         <Link to="/doacao" className="btn-primary">
-          ❤️ Transforme Vidas
+          Transforme Vidas
         </Link>
 
       </div>
