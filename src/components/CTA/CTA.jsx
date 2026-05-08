@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import foto from "../../../public/images/fotoFooter.jpeg";
+const foto = "/images/fotoFooter.jpeg";
 
 export default function CTA() {
   return (

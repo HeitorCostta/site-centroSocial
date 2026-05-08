@@ -1,11 +1,12 @@
-import Esporte from "../../public/images/Ariel.jpeg"
-import Danca from "../../public/images/Danca.jpeg"
-import Canto from "../../public/images/Camile.jpeg"
-import Culinaria from "../../public/images/Culinaria.jpeg"
-import Informatica from "../../public/images/Heitor.jpeg"
-import KungFu from "../../public/images/Carlos.jpeg"
-import Historia from "../../public/images/Aline.jpeg"
-import Artesanato from "../../public/images/Paula.jpeg"
+const Esporte = "/images/Ariel.jpeg";
+const Danca = "/images/danca.jpeg";
+const Canto = "/images/Camile.jpeg";
+const Culinaria = "/images/Culinaria.jpeg";
+const Informatica = "/images/Heitor.jpeg";
+const KungFu = "/images/Carlos.jpeg";
+const Historia = "/images/Aline.jpeg";
+const Artesanato = "/images/Paula.jpeg";
+
 // ===== AREAS =====
 export const AREAS = [
   {

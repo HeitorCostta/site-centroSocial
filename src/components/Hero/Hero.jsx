@@ -1,5 +1,5 @@
 import { scrollToId } from "../../utils/scroll";
-import logo from "../../../public/images/logo.png"
+const logo = "/images/logo.png";
 import { Link } from "react-router-dom";
 
 export default function Hero() {

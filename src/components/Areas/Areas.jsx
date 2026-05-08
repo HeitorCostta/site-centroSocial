@@ -1,11 +1,11 @@
 import { useReveal } from "../../hooks/useReveal";
 
-import aboutFoto from "../../../public/images/aboutFoto.jpeg";
+const aboutFoto = "/images/aboutFoto.jpeg";
 
-import planet1 from "../../../public/images/planets.png";
-import planet2 from "../../../public/images/planets2.png";
-import star from "../../../public/images/stars.png";
-import scribble from "../../../public/images/kids.png";
+const planet1 = "/images/planets.png";
+const planet2 = "/images/planets2.png";
+const star = "/images/stars.png";
+const scribble = "/images/kids.png";
 
 export default function Areas() {
   const [ref, visible] = useReveal();

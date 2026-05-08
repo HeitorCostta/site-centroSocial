@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import videoThumb from "../../../public/images/video-thumb.jpeg";
-import institucionalVideo from "../../../public/videos/videoInstitucional.mp4";
+const videoThumb = "/images/video-thumb.jpeg";
+const institucionalVideo = "/videos/videoInstitucional.mp4";
 
 export default function InstitutionalVideo() {
   const [open, setOpen] = useState(false);
