@@ -1,18 +1,48 @@
 const docs = [
   {
     title: "Estatuto Social",
-    file: "/docs/estatuto.pdf",
-    description: "Documento oficial com as diretrizes e funcionamento da instituição."
+    file: "/docs/EstatutoNovo2023.pdf",
+    description: "Estatuto Social do Centro Social São Mateus."
   },
   {
-    title: "Prestação de Contas",
-    file: "/docs/prestacao-contas.pdf",
-    description: "Relatórios financeiros e informações de transparência administrativa."
+    title: "ATA 2025-2026",
+    file: "/docs/ATA_2025a2026.pdf",
+    description: "ATA 2025-2026 do Centro Social São Mateus."
   },
   {
-    title: "Regulamento Interno",
-    file: "/docs/regulamento.pdf",
-    description: "Normas internas e orientações gerais do Centro Social."
+    title: "Balancete 2024",
+    file: "/docs/BALANCETE_2024.pdf",
+    description: "Balancete de 2024 do Centro Social São Mateus."
+  },
+
+  {
+    title: "Balanço Patrimonial 2025",
+    file: "/docs/BALANCO_PATRIMONIAL_2025.pdf",
+    description: "Balanço Patrimonial de 2025 do Centro Social São Mateus."
+  },
+
+  {
+    title: "Plano de Trabalho 2025",
+    file: "/docs/PLANO_DE_TRABALHO_2025.pdf",
+    description: "Plano de Trabalho de 2025 do Centro Social São Mateus."
+  },
+
+  {
+    title: "Plano de Trabalho 2026",
+    file: "/docs/PLANO_DE_TRABALHO_2026.pdf",
+    description: "Plano de Trabalho de 2026 do Centro Social São Mateus."
+  },
+
+  {
+    title: "Termo de Fomento 2023 - Aditivo",
+    file: "/docs/TERMO_DE_FOMENTO_02-2023_ADITIVO.pdf",
+    description: "Termo de Fomento de 2023 - Aditivo do Centro Social São Mateus."
+  },
+
+  {
+    title: "Termo de Fomento 2023 - 2025",
+    file: "/docs/TERMO_FOMENTO_02-2023_2025.pdf",
+    description: "Termo de Fomento de 2023- 2025 do Centro Social São Mateus."
   },
 ];
 
